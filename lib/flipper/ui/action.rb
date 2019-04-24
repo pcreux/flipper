@@ -208,7 +208,10 @@ module Flipper
 
         raise "Template does not exist: #{path}" unless path.exist?
 
+        # rubocop:disable Lint/Eval
+        # This is the recommended usage: https://github.com/jeremyevans/erubi#usage
         eval(Erubi::Engine.new(path.read).src)
+        # rubocop:enable Lint/Eval
       end
 
       # Internal: The path the app is mounted at.
