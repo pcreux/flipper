@@ -1,10 +1,20 @@
-## master
+## 0.16.2
+
+### Additions/Changes
+
+* Bump rollout redis dependency to < 5 (https://github.com/jnunemaker/flipper/pull/403)
+* Bump redis dependency to < 5 (https://github.com/jnunemaker/flipper/pull/401)
+* Bump sequel dependency to < 6 (https://github.com/jnunemaker/flipper/pull/399 and https://github.com/jnunemaker/flipper/commit/edc767e69b4ce8daead9801f38e0e8bf6b238765)
+
+## 0.16.1
 
 ### Additions/Changes
 
 * Add actors API endpoint (https://github.com/jnunemaker/flipper/pull/372).
 * Fix rack body proxy require for those using flipper without rack  (https://github.com/jnunemaker/flipper/pull/376).
 * Unescapes feature_name in FeatureNameFromRoute (https://github.com/jnunemaker/flipper/pull/377).
+* Replace delete_all with destroy_all in ActiveRecord adapter (https://github.com/jnunemaker/flipper/pull/395)
+* Target correct bootstrap breakpoints in flipper UI (https://github.com/jnunemaker/flipper/pull/396)
 
 ## 0.16.0
 
